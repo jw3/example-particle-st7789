@@ -68,6 +68,18 @@ Adafruit_ST7789 tft = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_RST);
 
 float p = 3.1415926;
 
+void testlines(uint16_t);
+void testdrawtext(char*, uint16_t);
+void testfastlines(uint16_t, uint16_t);
+void testdrawrects(uint16_t);
+void testfillrects(uint16_t, uint16_t);
+void testdrawcircles(uint8_t, uint16_t);
+void testfillcircles(uint8_t, uint16_t);
+void testtriangles();
+void testroundrects();
+void tftPrintTest();
+void mediabuttons();
+
 void setup(void) {
   Serial.begin(9600);
   Serial.print(F("Hello! ST77xx TFT Test"));
