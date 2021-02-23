@@ -23,12 +23,6 @@
  **************************************************************************/
 
 #include "Adafruit_ST77xx.h"
-#include <limits.h>
-#ifndef ARDUINO_STM32_FEATHER
-#include "pins_arduino.h"
-#include "wiring_private.h"
-#endif
-#include <SPI.h>
 
 #define SPI_DEFAULT_FREQ 32000000 ///< Default SPI data clock frequency
 

@@ -25,7 +25,6 @@
 #ifndef _ADAFRUIT_ST77XXH_
 #define _ADAFRUIT_ST77XXH_
 
-#include "Arduino.h"
 #include "Print.h"
 #include <Adafruit_GFX.h>
 #include <Adafruit_SPITFT.h>
