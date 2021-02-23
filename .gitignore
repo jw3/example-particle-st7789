@@ -1,0 +1,9 @@
+.idea
+*.iml
+
+build
+build-*
+cmake-build-*
+
+target
+.local
