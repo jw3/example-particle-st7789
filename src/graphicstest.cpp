@@ -31,7 +31,8 @@
  **************************************************************************/
 
 #include <application.h>
-
+#include <1545372.h>
+#include <weather-storm-day.h>
 #include <Adafruit_GFX.h>    // Core graphics library
 //#include <Adafruit_ST7735.h> // Hardware-specific library for ST7735
 #include <Adafruit_ST7789.h> // Hardware-specific library for ST7789
@@ -124,6 +125,10 @@ void setup(void) {
   testdrawtext("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur adipiscing ante sed nibh tincidunt feugiat. Maecenas enim massa, fringilla sed malesuada et, malesuada sit amet turpis. Sed porttitor neque ut ante pretium vitae malesuada nunc bibendum. Nullam aliquet ultrices massa eu hendrerit. Ut sed nisi lorem. In vestibulum purus a tortor imperdiet posuere. ", ST77XX_WHITE);
   delay(1000);
 
+  tft.fillScreen(ST77XX_BLACK);
+  tft.drawRGBBitmap(56, 56, image_data_1545372, 128, 128);
+  delay(4000);
+
   // tft print function!
   tftPrintTest();
   delay(4000);
@@ -159,6 +164,12 @@ void setup(void) {
 
   mediabuttons();
   delay(500);
+
+  tft.fillScreen(ST77XX_BLACK);
+  tft.drawRGBBitmap(20, 20, image_data_weatherstormday, 64, 64);
+  tft.drawRGBBitmap(56, 56, image_data_1545372, 128, 128);
+  tft.drawRGBBitmap(156, 20, image_data_weatherstormday, 64, 64);
+  delay(4000);
 
   Serial.println("done");
   delay(1000);
